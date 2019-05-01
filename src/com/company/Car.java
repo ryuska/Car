@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Car {
     private String make;
     private String model;
@@ -8,6 +10,8 @@ public class Car {
 
 
     public Car(){
+
+//        ArrayList<Car>vroom = new ArrayList<>();
         System.out.println("A new car!");
 
     }
@@ -46,22 +50,35 @@ public class Car {
     }
 
     public void start() {
-        System.out.println( "The "+ getColor() + " " + getMake() + " " + getModel() + " is starting");
+        System.out.println("The " + getColor() + " " + getMake() + " " + getModel() + " is starting");
     }
+
     public String accelerate() {
-        return " The "+ getColor() + " " + getMake() + " " + getModel() + " is accelerating";
+        return " The " + getColor() + " " + getMake() + " " + getModel() + " is accelerating";
     }
+
     public String getMph() {
-        return "The "+ getColor() + " " + getMake() + " " + getModel() + "  is going" + " " + getSpeed() + " mph";
+        return "The " + getColor() + " " + getMake() + " " + getModel() + "  is going" + " " + getSpeed() + " mph";
     }
+
     public String stop() {
-        return "The"+ getColor() + " " + getMake() + " " + getModel() + " has stopped";
+        return "The" + getColor() + " " + getMake() + " " + getModel() + " has stopped";
 
     }
+
     public String emission() {
         return "The " + getColor() + " " + getMake() + " " + getModel() + " has stopped to have its emmision cheched";
     }
-    public String passemission(){
+
+    public String passemission() {
         return "The " + getColor() + " " + getMake() + " " + getModel() + " passes its emission test";
     }
-}
+
+    public String getDescription(){
+        return "Make " + getMake() + "\n" +
+                "model " + getModel() + "\n" +
+                "speed " + getSpeed() + "\n" +
+                "color " + getColor();
+     }
+
+        }
