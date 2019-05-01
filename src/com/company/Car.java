@@ -5,11 +5,8 @@ public class Car {
     private String model;
     private String speed;
     private String color;
-    private String emission;
 
 
-
-    //    constructor
     public Car(){
         System.out.println("A new car!");
 
@@ -60,5 +57,11 @@ public class Car {
     public String stop() {
         return "The"+ getColor() + " " + getMake() + " " + getModel() + " has stopped";
 
+    }
+    public String emission() {
+        return "The " + getColor() + " " + getMake() + " " + getModel() + " has stopped to have its emmision cheched";
+    }
+    public String passemission(){
+        return "The " + getColor() + " " + getMake() + " " + getModel() + " passes its emission test";
     }
 }

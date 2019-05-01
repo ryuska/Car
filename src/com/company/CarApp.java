@@ -13,7 +13,8 @@ public class CarApp {
         System.out.println(a.accelerate());
         System.out.println(a.getMph());
         System.out.println(a.stop());
-        System.out.println(a.getEmission());
+
+
 
         Car b = new Car();
         b.setMake("Jetta");
@@ -24,6 +25,8 @@ public class CarApp {
         System.out.println(b.accelerate());
         System.out.println(b.getMph());
         System.out.println(b.stop());
+        System.out.println((b.emission()));
+        System.out.println(b.passemission());
 //        print(a.accelerate());
 //        print(a.go());
 //        print(a.stop());
